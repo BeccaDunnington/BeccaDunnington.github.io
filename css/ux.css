@@ -1,0 +1,112 @@
+body  {
+    background-image: url("https://img.freepik.com/premium-photo/white-lined-sheet-notepad-crumpled-paper-background_35652-234.jpg?w=826");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position:relative;
+  }
+
+#top {
+    display: flex;
+    justify-content: right;
+    margin: 10px 100px 10px 100px ;
+    font-family:Franklin
+    Gothic Medium;
+}
+
+#top > * {
+    padding: 0 20px 0 20px;
+}
+
+.title {
+    min-height: fit-content;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Patrick Hand', cursive;
+    font-size: x-large;
+    text-align: center;
+    background-image: url(..//images/Highlighter\ Pen.png);
+    background-position: center;
+    background-size:auto;
+    background-repeat: no-repeat;
+    
+}
+
+.postit {
+    position: relative;
+    margin-left: 200px;
+    margin-top: 50px;
+    height:300px;
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    align-content: stretch;
+    justify-content: center;
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+    background-image: url(..//images/Post\ It\ Note.png);
+    background-size: cover;
+    background-position: center;
+    background-size:auto;
+    background-repeat: no-repeat;
+
+}
+
+.postit h2 {
+    font-size: x-large;
+    position: absolute;
+    top: 15px;
+    left: 100px;
+}
+
+.postit ul {
+    list-style: none;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    text-align: left;
+
+}
+
+.postit img {
+    position: absolute;
+    top:300px;
+    left:0px;
+    height: 150px;
+    width:150px;
+}
+
+.sheet {
+    margin-left: 400px;
+    margin-top: 30px;
+    margin-bottom: auto;
+    height: 600px;
+    width:600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    align-content: stretch;
+    justify-content: space-evenly;
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+    background-color: aquamarine;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    border-radius: 30px;
+
+
+}
+
+.sheet h3{
+    font-size: x-large;
+}
+
+.sheet p{
+    font-size: larger;
+}

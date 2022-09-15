@@ -1,0 +1,79 @@
+#top {
+  display: flex;
+  justify-content: right;
+  margin: 10px 100px 10px 100px ;
+  font-family:Franklin
+  Gothic Medium;
+}
+
+#top > * {
+  padding: 0 20px 0 20px;
+}
+
+body  {
+    background-image: url("https://img.freepik.com/premium-photo/white-lined-sheet-notepad-crumpled-paper-background_35652-234.jpg?w=826");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 50px 30px 50px 30px;
+    background-image: url(..//images/Highlighter\ Pen\ yellow.png);
+    background-position: center;
+    background-size:85%;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    font-family: Georgia; 
+    margin: 20px 120px 20px 120px;
+    justify-content: space-between;
+}
+
+.info {
+    text-align: center;
+    padding: 5px 5px 10px 5px;
+    background-color: rgb(245, 174, 127);
+    border-radius: 30px;
+    font-family: Garamond, serif;
+    margin: 20px 120px 20px 120px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin: 20px 140px 20px 140px; 
+  }
+
+.grid-item {
+    color: black;
+    text-align: left;
+    margin: 2px;
+    padding: 10px;
+    background-color: rgb(205, 149, 244);
+    border-radius: 30px;
+  }
+
+img {
+    border-radius: 30px;
+  }
+
+.video {
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  background-color: rgb(245, 174, 127);
+  border-radius: 30px;
+  font-family: Garamond, serif;
+  margin: 5px 300px 5px 300px;
+}
+
+
+

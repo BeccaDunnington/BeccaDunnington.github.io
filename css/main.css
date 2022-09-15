@@ -1,0 +1,89 @@
+#top {
+    display: flex;
+    justify-content: right;
+    margin: 10px 100px 10px 100px ;
+    font-family:Franklin Gothic Medium;
+}
+
+#top > * {
+    padding: 0 20px 0 20px;
+}
+
+#heading {
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    background-image: url(..//images/Highlighter\ Pen\ yellow.png);
+    background-position: center;
+    background-size:85%;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    font-family: Georgia; 
+    margin: 20px 120px 20px 120px;
+    justify-content: space-between;
+}
+
+#intro {
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    background-color: paleturquoise;
+    border-radius: 30px;
+    font-family: Garamond, serif;
+    font-weight: bold;
+    margin-left: 200px;
+    margin-top: 15px;
+}
+
+#contact {
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+        background-color: rgb(245, 174, 127);
+        border-radius: 30px;
+        font-family: Garamond, serif;
+        margin-left: 200px;
+    }
+
+body  {
+    background-image: url("https://img.freepik.com/premium-photo/white-lined-sheet-notepad-crumpled-paper-background_35652-234.jpg?w=826");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 60px;
+}
+
+img {
+    border-radius: 30px;
+}
+
+#learn {
+    text-align: center;
+    padding: 10px 30px 30px 30px;
+    background-color: rgb(205, 149, 244);
+    border-radius: 30px;
+    font-family: Georgia; 
+    margin: 5px 120px 20px 120px
+}
+
+#bottom {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 150px 10px 150px;
+    font-family:Franklin Gothic Medium;
+    font-size: 30px;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    background-color: rgb(245, 174, 127);
+    border-radius: 30px;
+    font-family: Garamond, serif;
+    margin: 5px 300px 5px 300px;
+}
