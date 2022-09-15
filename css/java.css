@@ -2,8 +2,7 @@
 body  {
     background-image: url("https://img.freepik.com/premium-photo/white-lined-sheet-notepad-crumpled-paper-background_35652-234.jpg?w=826");
     background-color: #cccccc;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: repeat-y;
     background-size: 100%;
     position: relative;
   }
@@ -30,7 +29,7 @@ body  {
     padding: 10px 30px 10px 30px;
     background-image: url(..//images/Highlighter\ Pen\ yellow.png);
     background-position: center;
-    background-size:80%;
+    background-size:85%;
     background-repeat: no-repeat;
     border-radius: 30px;
     font-family: Georgia; 
@@ -274,13 +273,4 @@ main {
 
 .task .actions .delete {
     color: rgb(49, 97, 179);
-}
-
-footer {
-    text-align: center;
-    padding: 5px 5px 5px 5px;
-    background-color: rgb(245, 174, 127);
-    border-radius: 30px;
-    font-family: Garamond, serif;
-    margin: 5px 300px 5px 300px;
 }
