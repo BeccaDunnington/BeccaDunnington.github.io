@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitty Code Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Sniglet&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/watch.css" />
+    <script src="../scripts/watch.js" defer></script>
+  </head>
+  <body>
+    <!-- Header section with logo and navigation menu -->
+    <header>
+      <!-- Logo -->
+      <a href="./home.html" class="make-logo">
+        <img
+          class="logo"
+          src="../images/LOGO.png"
+          alt="The website logo, An outline silhouette of a cats face with the words 'Kitty Code Club' nested inside"
+        />
+      </a>
+      <!-- Main navigation menu -->
+      <nav>
+        <ul class="nav-items">
+          <li class="split">
+            <a href="./home.html"
+              ><img class="nav-img" src="../images/nav-images/home.png" />
+              home</a
+            >
+          </li>
+          <li class="split">
+            <a href="./make.html"
+              ><img
+                class="nav-img"
+                src="../images/nav-images/make.png"
+              />make</a
+            >
+          </li>
+          <li class="split">
+            <a href="./play.html"
+              ><img
+                class="nav-img"
+                src="../images/nav-images/play.png"
+              />play</a
+            >
+          </li>
+          <li class="split">
+            <a href="./watch.html"
+              ><img
+                class="nav-img"
+                src="../images/nav-images/watch.png"
+              />watch</a
+            >
+          </li>
+          <li>
+            <a href="./grownups.html"
+              ><img
+                class="nav-img"
+                src="../images/nav-images/grown-ups.png"
+              />grown-ups</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Hamburger icon Open Button -->
+      <a class="hamburger" href="#side-drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </header>
+    <!-- Side drawer for mobile navigation -->
+    <aside class="side-drawer" id="side-drawer">
+      <nav>
+        <header>
+          <a href="./home.html">
+            <img
+              class="logo"
+              src="../images/LOGO.png"
+              alt="The website logo, An outline silhouette of a cats face with the words 'Kitty Code Club' nested inside"
+            />
+          </a>
+          <!-- Hamburger icon Close Button -->
+          <a class="hamburger" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </header>
+        <!-- Navigation items for side drawer -->
+        <ul class="side-items">
+          <li class="split">
+            <a href="./home.html"
+              ><img class="side-img" src="../images/nav-images/home.png" />
+              home</a
+            >
+          </li>
+          <li class="split">
+            <a href="./make.html"
+              ><img
+                class="side-img"
+                src="../images/nav-images/make.png"
+              />make</a
+            >
+          </li>
+          <li class="split">
+            <a href="./play.html"
+              ><img
+                class="side-img"
+                src="../images/nav-images/play.png"
+              />play</a
+            >
+          </li>
+          <li class="split">
+            <a href="./watch.html"
+              ><img
+                class="side-img"
+                src="../images/nav-images/watch.png"
+              />watch</a
+            >
+          </li>
+          <li>
+            <a href="./grownups.html"
+              ><img
+                class="side-img"
+                src="../images/nav-images/grown-ups.png"
+              />grown-ups</a
+            >
+          </li>
+          <li class="close-btn"><a href="">close</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- Main section -->
+    <main>
+      <!-- Top section with the video and description-->
+      <section>
+        <!-- Video -->
+        <div class="sequence-video">
+          <iframe
+            class="youtube-video"
+            src="https://www.youtube.com/embed/62Y0GN1DmmA?si=AQl57igD_UVoMvyE"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <!-- Video Description -->
+          <p class="video-description">
+            The video is a cheerful and fun song about variables. It features
+            two animated characters, a girl and a boy, who sing about what
+            variables are and how they work. They explain that variables are
+            like containers that can hold different things, such as numbers or
+            words. The song shows examples of how you can change what's inside
+            the variable, making it easy to understand. The colorful animation
+            and catchy tune help make learning about variables fun and simple.
+          </p>
+        </div>
+      </section>
+      <!-- Lower section with parent information -->
+      <section class="flex-container lower-section">
+        <a href=""> </a>
+        <!-- Cat image -->
+        <img
+          class="parents-notes-companion-img kitten-meow"
+          onclick="audio.play();"
+          src="../images/Cat-in-a-play-room.png"
+          alt=""
+        />
+        <!-- Parent information -->
+        <div class="parents-notes">
+          <h1>Notes for Parents</h1>
+          <p>
+            Watch the video to enter the exciting world of variables. Variables
+            are a fundamental idea in coding and are used in every programming
+            language. Introduce your child to them with this fun, engaging song.
+          </p>
+          <p>
+            By incorporating simple yet engaging games and activities, Kitty
+            Code Club ensures that children not only grasp coding principles but
+            also develop a genuine interest in the world of programming.
+            Learning becomes an adventure they eagerly embark on, fostering a
+            lifelong passion for technology.
+          </p>
+          <p>
+            At Kitty Code Club, we believe in making learning fun through
+            engaging games and activities. We understand that children learn
+            best when they're excited and having a great time. Our approach
+            combines the magic of play with the fundamentals of computer
+            programming.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Footer section with copyright information -->
+    <footer>
+      <p>
+        © 2023 Kitty Code Club. <br />
+        All rights reserved. <br /><br />
+        Empowering young minds in the world of computer science.
+        <br /><br />
+        Join us in fostering creativity, problem-solving, and innovation in kids
+        through <br />fun coding adventures! 🐾✨
+      </p>
+    </footer>
+  </body>
+</html>

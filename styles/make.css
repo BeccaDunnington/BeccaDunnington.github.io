@@ -1,0 +1,156 @@
+/* ==========================================================================
+   General Styles
+   ========================================================================== */
+
+/* Background colour for the body */
+body {
+  background-color: #dacafb;
+}
+
+/* Remove default list styles from unordered lists */
+ul {
+  list-style: none;
+}
+
+/* ==========================================================================
+   Carousel
+   ========================================================================== */
+
+/* Styles for the carousel container */
+.carousel {
+  margin: 3rem auto 1rem auto;
+  width: 70%;
+  height: 60vh;
+  position: relative;
+}
+
+/* Styles for each slide in the carousel */
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: white;
+  border-radius: 12pt;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+/* Styles for images within each slide */
+.slide img {
+  display: block;
+  width: 90%;
+  height: 85%;
+  object-fit: cover;
+  object-position: center;
+  border: 3pt solid #ffa834;
+  border-radius: 8pt;
+  margin: 3.8% auto;
+}
+
+/* Active slide in the carousel (image currently displayed)*/
+.slide[data-active] {
+  opacity: 1;
+  transition-delay: 0ms;
+}
+
+/* ==========================================================================
+   Carousel Buttons
+   ========================================================================== */
+
+/* Styles for the carousel buttons */
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: white;
+  border: 3pt solid #ffa834;
+  color: #ffa834;
+  border-radius: 5pt;
+  font-size: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Hover effect for the carousel buttons */
+.carousel-button:hover {
+  box-shadow: 0 0rem 4pt #232323;
+  border-color: #8b51f5;
+}
+
+/* Positioning for the previous button 1 rem from left*/
+.carousel-button.prev {
+  left: 1rem;
+}
+
+/* Positioning for the next button 1 rem from right*/
+.carousel-button.next {
+  right: 1rem;
+}
+
+/* ==========================================================================
+   PDF Button
+   ========================================================================== */
+
+/* Styles for the PDF button */
+.pdf-btn {
+  color: #232323;
+  font-family: "Carter One", sans-serif;
+  background-color: white;
+  border: 2pt solid #75a9f9;
+  padding: 0.25rem 2rem;
+  border-radius: 25pt;
+  float: right;
+  margin-right: 15%;
+}
+
+/* ==========================================================================
+   Chef Hat
+   ========================================================================== */
+
+/* Styles for the chef hat icon, hidden by default */
+.chef-hat {
+  display: none;
+  width: 50px;
+  z-index: 2;
+  left: 10rem;
+  top: 0%;
+  transform: rotate(-20deg);
+  position: absolute;
+}
+
+/* Display the chef hat icon when hovering over .make-logo */
+.make-logo:hover .chef-hat {
+  display: block;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design
+   ========================================================================== */
+
+/* Styles for screens with a maximum width of 950px */
+@media (max-width: 950px) {
+  /* Do not display the chef hat when logo hovered */
+  .make-logo:hover .chef-hat {
+    display: none;
+  }
+}
+
+/* Styles for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .carousel {
+    margin: 1rem auto;
+    width: 90vw;
+    height: 30vh;
+    position: relative;
+  }
+
+  .pdf-btn {
+    margin-top: -0.5rem;
+    margin-right: 10%;
+  }
+
+  /* Nullify the hover effect for carousel buttons on smaller screens */
+  .carousel-button:hover {
+    box-shadow: 0 0 0 0;
+    border-color: #ffa834;
+  }
+}

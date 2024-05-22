@@ -1,0 +1,343 @@
+/* ==========================================================================
+   General Styles
+   ========================================================================== */
+
+/* Disable hover effects on touch devices */
+html.touch *:hover {
+  all: unset !important;
+}
+
+/* Base styles for the body */
+body {
+  margin: 0 auto;
+  background-color: #c9f1fd;
+  font-family: "Sniglet", sans-serif;
+  min-height: 100vh;
+  max-width: 1425px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+
+/* Styles for h1 headings */
+h1 {
+  font-family: "Carter One", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #232323;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/* Remove default padding and margin from unordered lists */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Labels
+   ========================================================================== */
+
+/* Styles for form labels */
+label {
+  font-family: "Carter One", sans-serif;
+  font-size: 1.5rem;
+  color: #232323;
+}
+
+/* ==========================================================================
+   
+Header
+
+   ========================================================================== */
+
+/* Styles for the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 4pt solid #75a9f9;
+  border-radius: 10pt;
+  margin: 4rem auto;
+  width: 90%;
+  height: 50px;
+}
+
+/* ==========================================================================
+   Anchor Tags
+   ========================================================================== */
+
+/* Base styles for anchor tags */
+a {
+  text-decoration: none;
+  color: #8b51f5;
+}
+
+/* ==========================================================================
+   Logo
+   ========================================================================== */
+
+/* Styles for the logo within the header */
+.logo {
+  margin: 0 20%;
+  width: 10rem;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+/* Styles for the navigation container */
+header nav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  /* border: 5px solid red; */
+}
+
+/* Styles for the hamburger menu icon, hidden by default */
+.hamburger {
+  display: none;
+}
+
+/* Styles for images within the navigation */
+.nav-img {
+  margin: auto;
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+
+/* Styles for navigation items */
+.nav-items {
+  margin: auto;
+  list-style: none;
+  display: flex;
+  font-size: 1.1rem;
+  padding: 0;
+}
+
+/* Styles for anchor tags within navigation items */
+.nav-items li a {
+  margin: -2.5rem 0.5rem 0.5rem;
+  padding: 1rem 1.5rem 0.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hover effect for anchor tags within navigation items */
+.nav-items li a:hover {
+  background-color: #8b51f5;
+  color: white;
+  cursor: pointer;
+  border-radius: 5pt;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Side Drawer
+   ========================================================================== */
+
+/* Styles for the side drawer, hidden by default */
+#side-drawer {
+  display: none;
+  width: 100%;
+  background-color: #3d8af7;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  right: 0;
+}
+
+/* Show the side drawer when targeted (when hamburger menu clicked)*/
+#side-drawer:target {
+  display: block;
+}
+
+/* Flex direction for side drawer content */
+.side-drawer {
+  flex-direction: column;
+}
+
+/* Styles for navigation within the side drawer */
+.side-drawer nav {
+  width: 100%;
+  height: 100%;
+}
+
+/* Styles for side drawer items */
+.side-items {
+  list-style: none;
+  height: 100%;
+}
+
+/* Styles for anchor tags within side drawer items */
+.side-items a {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  color: #232323;
+  font-family: "Carter One", sans-serif;
+  font-size: 2rem;
+  width: 70%;
+  padding: 0rem 2rem;
+  border: 6pt solid #75a9f9;
+  border-radius: 35pt;
+}
+
+/* Styles for images within the side drawer */
+.side-img {
+  height: 4rem;
+  object-fit: contain;
+  padding: 0.5rem;
+}
+
+/* Styles for the close button within the side drawer */
+.close-btn {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+/* Styles for anchor tags within the close button */
+.close-btn a {
+  padding: 0.5rem;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+/* Styles for the footer */
+footer {
+  background: #a8c6fa;
+  width: 100%;
+  margin: auto 0 0 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Styles for paragraphs within the footer */
+footer p {
+  font-size: 0.75rem;
+}
+
+/* ==========================================================================
+   Paragraphs
+   ========================================================================== */
+
+/* Base styles for paragraphs */
+p {
+  font-size: 1rem;
+}
+
+/* ==========================================================================
+   Flex Containers
+   ========================================================================== */
+
+/* Flex container styles with spacing */
+.flex-container {
+  /* border: 2pt solid blue; */
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+/* ==========================================================================
+   Lower Section (parents notes and images)
+   ========================================================================== */
+
+/* Styles for the lower section */
+.lower-section {
+  width: 80%;
+  margin-bottom: 3rem;
+  /* border: 2pt solid red; */
+}
+
+/* Styles for companion images in the parent's notes section */
+.parents-notes-companion-img {
+  width: 40%;
+  height: auto;
+  object-fit: contain;
+  /* border: 2pt solid red; */
+  margin: 2rem 1rem 0 3rem;
+}
+
+/* Styles for the parent's notes section */
+.parents-notes {
+  /* border: 2pt solid red; */
+  margin: 0 2rem 0 0;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design
+   ========================================================================== */
+
+/* Styles for screens with a maximum width of 950px */
+@media (max-width: 950px) {
+  /* Increase border radius for the header  (nav bar) */
+  header {
+    border-radius: 35pt;
+  }
+
+  /* Hide navigation within the header */
+  header nav {
+    display: none;
+  }
+
+  /* Display hamburger menu icon */
+  .hamburger {
+    width: 2.75rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 2rem;
+  }
+
+  /* Styles for spans within the hamburger menu (the hamburger icon)*/
+  .hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: #8b51f5;
+    border: 1pt solid #8b51f5;
+    border-radius: 18pt;
+  }
+
+  /* Hide companion images in the parent's notes section */
+  .parents-notes-companion-img {
+    display: none;
+  }
+
+  .parents-notes {
+    text-align: left;
+    margin: 0 0 3rem 0;
+  }
+
+  .parents-notes h1 {
+    font-family: "Sniglet", sans-serif;
+    text-align: left;
+  }
+
+  .parents-notes p {
+    width: 100%;
+  }
+
+  /* Hide the footer */
+  footer {
+    display: none;
+  }
+}

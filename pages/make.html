@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitty Code Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Sniglet&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/make.css" />
+    <script src="../scripts/make.js" defer></script>
+  </head>
+  <body>
+    <!-- Header section with logo and navigation menu -->
+    <header>
+      <!-- Logo -->
+      <a href="./home.html" class="make-logo">
+        <!-- extra chef hat -->
+        <img class="chef-hat" src="../images/Chef-hat.png" alt="" />
+        <img
+          class="logo"
+          src="../images/LOGO.png"
+          alt="The website logo, An outline silhouette of a cats face with the words 'Kitty Code Club' nested inside"
+        />
+      </a>
+      <!-- Main navigation menu -->
+      <nav>
+        <ul class="nav-items">
+          <li class="split">
+            <a href="./home.html"
+              ><img class="nav-img" src="../images/nav-images/home.png" />
+              home</a
+            >
+          </li>
+          <li class="split">
+            <a href="./make.html"
+              ><img
+                class="nav-img"
+                src="../images/nav-images/make.png"
+              />make</a
+            >
+          </li>
+          <li class="split">
+            <a href="./play.html"
+              ><img
+                class="nav-img"
+                src="../images/nav-images/play.png"
+              />play</a
+            >
+          </li>
+          <li class="split">
+            <a href="./watch.html"
+              ><img
+                class="nav-img"
+                src="../images/nav-images/watch.png"
+              />watch</a
+            >
+          </li>
+          <li>
+            <a href="./grownups.html"
+              ><img
+                class="nav-img"
+                src="../images/nav-images/grown-ups.png"
+              />grown-ups</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Hamburger icon Open Button -->
+      <a class="hamburger" href="#side-drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </header>
+    <!-- Side drawer for mobile navigation -->
+    <aside class="side-drawer" id="side-drawer">
+      <nav>
+        <header>
+          <a href="./home.html">
+            <img
+              class="logo"
+              src="../images/LOGO.png"
+              alt="The website logo, An outline silhouette of a cats face with the words 'Kitty Code Club' nested inside"
+            />
+          </a>
+          <!-- Hamburger icon Close Button -->
+          <a class="hamburger" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </header>
+        <!-- Navigation items for side drawer -->
+        <ul class="side-items">
+          <li class="split">
+            <a href="./home.html"
+              ><img class="side-img" src="../images/nav-images/home.png" />
+              home</a
+            >
+          </li>
+          <li class="split">
+            <a href="./make.html"
+              ><img
+                class="side-img"
+                src="../images/nav-images/make.png"
+              />make</a
+            >
+          </li>
+          <li class="split">
+            <a href="./play.html"
+              ><img
+                class="side-img"
+                src="../images/nav-images/play.png"
+              />play</a
+            >
+          </li>
+          <li class="split">
+            <a href="./watch.html"
+              ><img
+                class="side-img"
+                src="../images/nav-images/watch.png"
+              />watch</a
+            >
+          </li>
+          <li>
+            <a href="./grownups.html"
+              ><img
+                class="side-img"
+                src="../images/nav-images/grown-ups.png"
+              />grown-ups</a
+            >
+          </li>
+          <li class="close-btn"><a href="">close</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- Main section -->
+    <main>
+      <!-- Section containing the image carousel -->
+      <section aria-label="Recipe Instructions" class="carousel-container">
+        <div class="carousel" data-carousel>
+          <!-- carousel buttons -->
+          <button class="carousel-button prev" data-carousel-button="prev">
+            &#8678;
+          </button>
+          <button class="carousel-button next" data-carousel-button="next">
+            &#8680;
+          </button>
+          <!-- carousel images -->
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="../images/Carousel-images/Ricecake1.jpeg" alt="" />
+            </li>
+            <li class="slide">
+              <img src="../images/Carousel-images/Ricecake2.jpeg" alt="" />
+            </li>
+            <li class="slide">
+              <img src="../images/Carousel-images/Ricecake3.jpeg" alt="" />
+            </li>
+            <li class="slide">
+              <img src="../images/Carousel-images/Ricecake4.jpeg" alt="" />
+            </li>
+            <li class="slide">
+              <img src="../images/Carousel-images/Ricecake5.jpeg" alt="" />
+            </li>
+            <li class="slide">
+              <img src="../images/Carousel-images/Ricecake6.jpeg" alt="" />
+            </li>
+          </ul>
+        </div>
+        <!-- Download PDF Button -->
+        <a class="pdf-btn" href="../images/Recipe-PDF-download.pdf"
+          >Download PDF</a
+        >
+      </section>
+      <!-- Lower section with parent information -->
+      <section class="flex-container lower-section">
+        <!-- Cat image -->
+        <img
+          class="parents-notes-companion-img"
+          onclick="audio.play();"
+          src="../images/Laptop-cat.png"
+          alt=""
+        />
+        <!-- Parent information -->
+        <div class="parents-notes">
+          <h1>Notes for Parents</h1>
+          <p>
+            Follow the recipe to make your own kittilicious snack. You can
+            tailor the ingredients to suit your child, follow the recipe and
+            create a yummy snack while learning a key concept of programming.
+          </p>
+          <p>
+            This activity will show children a task, broken down into ordered
+            instructions and executed one by one. This is called sequencing and
+            this is exactly how computers execute code.
+          </p>
+          <p>
+            At Kitty Code Club, we believe in making learning fun through
+            engaging games and activities. We understand that children learn
+            best when they're excited and having a great time. Our approach
+            combines the magic of play with the fundamentals of computer
+            programming.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Footer section with copyright information -->
+    <footer>
+      <p>
+        © 2023 Kitty Code Club. <br />
+        All rights reserved. <br /><br />
+        Empowering young minds in the world of computer science.
+        <br /><br />
+        Join us in fostering creativity, problem-solving, and innovation in kids
+        through <br />fun coding adventures! 🐾✨
+      </p>
+    </footer>
+  </body>
+</html>

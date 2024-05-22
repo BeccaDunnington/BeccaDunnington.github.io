@@ -1,0 +1,278 @@
+/* ==========================================================================
+   General Styles
+   ========================================================================== */
+
+/* Background colour for the body */
+body {
+  background-color: #ffc581;
+}
+/* ==========================================================================
+   
+Game 
+   
+   ========================================================================== */
+/* ==========================================================================
+   Game Container
+   ========================================================================== */
+
+/* Centre the game container and style its border and background */
+#game-container {
+  text-align: center;
+  margin: 3rem auto 1rem;
+  display: flex;
+  border: solid 3pt #8b51f5;
+  border-radius: 10pt;
+  width: fit-content;
+  height: fit-content;
+  background-color: #dacafb;
+}
+
+/* ==========================================================================
+   Instruction Container
+   ========================================================================== */
+
+/* Display the instruction container as a flexbox */
+#instruction-container {
+  display: flex;
+}
+
+/* ==========================================================================
+   Game Board
+   ========================================================================== */
+
+/* Styles for the game board grid */
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 4rem);
+  grid-template-rows: repeat(4, 4rem);
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: solid 6pt #75a9f9;
+  border-radius: 10pt;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  background-color: rgb(179, 209, 200);
+}
+
+/* ==========================================================================
+   Win and Lose Messages
+   ========================================================================== */
+
+/* Styles for the win message */
+.win {
+  display: flex;
+  font-size: 3rem;
+  align-items: center;
+  justify-content: center;
+  width: 17.5rem;
+  height: 17.5rem;
+  margin: auto;
+  text-align: center;
+  color: blue;
+  animation: winMessage 1s ease-in normal;
+}
+/* Keyframes for the win message animation */
+@keyframes winMessage {
+  0% {
+    font-size: 1rem;
+  }
+  100% {
+    font-size: 3rem;
+  }
+}
+
+/* Styles for the lose message */
+.lose {
+  display: flex;
+  font-size: 3rem;
+  align-items: center;
+  justify-content: center;
+  width: 17.5rem;
+  height: 17.5rem;
+  margin: auto;
+  text-align: center;
+  color: blue;
+}
+
+/* ==========================================================================
+   Game Tiles
+   ========================================================================== */
+
+/* Styles for the game tiles */
+.tile {
+  background-color: rgb(147, 195, 179);
+  border: 1px solid rgb(97, 167, 145);
+}
+
+/* Styles for the path tiles */
+.path {
+  background-color: rgb(248, 226, 188);
+  border: 1px solid rgb(222, 155, 96);
+  box-shadow: 0 0.125rem 3pt #8c8b8b;
+}
+
+/* ==========================================================================
+   Icons
+   ========================================================================== */
+
+/* Styles for the target icon */
+.target {
+  width: 3rem;
+}
+
+/* Styles for the cat icon */
+.icon {
+  width: 3rem;
+  margin: auto;
+  /* opacity: 0; */
+}
+
+/* Make player icon visible */
+.player .icon {
+  opacity: 1;
+}
+
+/* Hide the target when player icon is visible on same tile */
+.player .target {
+  opacity: 0;
+}
+
+/* ==========================================================================
+   Control Container
+   ========================================================================== */
+
+/* Remove default list styles from control container */
+#control-container ul {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+}
+
+/* Control container adjusts to content height */
+#control-container {
+  height: fit-content;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+/* General styles for buttons */
+.btn {
+  border: solid 3pt #75a9f9;
+  background-color: white;
+  border-radius: 25pt;
+  box-shadow: 0 0.125rem 4pt #646363;
+}
+
+/* Change cursor on button hover */
+.btn:hover {
+  cursor: pointer;
+}
+
+/* Styles for control buttons */
+.controlBtn {
+  width: 8rem;
+  margin: 0.75rem auto;
+}
+
+/* Change cursor on control button hover */
+.controlBtn:hover {
+  cursor: pointer;
+}
+
+/* Styles for go button */
+.goBtn {
+  width: 4rem;
+  margin: 1.5rem auto 0.5rem auto;
+}
+
+/* Styles for clear button */
+.clearBtn {
+  width: 4rem;
+  margin: 0.5rem auto;
+}
+
+/* Styles for new game button */
+.newBtn {
+  width: 6rem;
+  margin: 0.5rem auto 0 auto;
+}
+
+/* ==========================================================================
+   Control Display
+   ========================================================================== */
+
+/* Styles for control display container */
+#control-display {
+  width: 8rem;
+  height: 18.5rem;
+  border: solid 6pt #75a9f9;
+  border-radius: 10pt;
+  margin: 0 auto;
+  background-color: white;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Remove default list styles from control display list */
+#control-display-list {
+  list-style: none;
+}
+
+/* Styles for control icons */
+.controlIcon {
+  font-weight: 900;
+  font-size: 1.25rem;
+  width: 4rem;
+  border: solid 3pt #232323;
+  color: #232323;
+  border-radius: 25pt;
+  margin: 1rem auto;
+  background-color: #ffc581;
+}
+
+/* ==========================================================================
+   Game Instructions
+   ========================================================================== */
+
+/* Styles for the game instructions container */
+.game-instructions {
+  margin: auto;
+  width: fit-content;
+  max-width: 70%;
+  background-color: white;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 25pt;
+  border: solid 3pt #dacafb;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design
+   ========================================================================== */
+
+/* Styles for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  /* Change game view for smaller screens */
+  #game-container {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+
+  .btn {
+    padding: 0.25rem;
+    font-size: 1.25rem;
+  }
+
+  .controlIcon {
+    padding: 0.25rem;
+    font-size: 1.25rem;
+  }
+
+  #control-display {
+    margin: auto;
+    height: 22rem;
+  }
+}

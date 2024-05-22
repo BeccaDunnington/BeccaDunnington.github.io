@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitty Code Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Sniglet&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/play.css" />
+    <script src="../scripts/play.js" defer></script>
+  </head>
+  <body onload="startGame()">
+    <!-- Header section with logo and navigation menu -->
+    <header>
+      <!-- Logo -->
+      <a href="./home.html" class="make-logo">
+        <img
+          class="logo"
+          src="../images/LOGO.png"
+          alt="The website logo, An outline silhouette of a cats face with the words 'Kitty Code Club' nested inside"
+        />
+      </a>
+      <!-- Main navigation menu -->
+      <nav>
+        <ul class="nav-items">
+          <li class="split">
+            <a href="./home.html"
+              ><img class="nav-img" src="../images/nav-images/home.png" />
+              home</a
+            >
+          </li>
+          <li class="split">
+            <a href="./make.html"
+              ><img
+                class="nav-img"
+                src="../images/nav-images/make.png"
+              />make</a
+            >
+          </li>
+          <li class="split">
+            <a href="./play.html"
+              ><img
+                class="nav-img"
+                src="../images/nav-images/play.png"
+              />play</a
+            >
+          </li>
+          <li class="split">
+            <a href="./watch.html"
+              ><img
+                class="nav-img"
+                src="../images/nav-images/watch.png"
+              />watch</a
+            >
+          </li>
+          <li>
+            <a href="./grownups.html"
+              ><img
+                class="nav-img"
+                src="../images/nav-images/grown-ups.png"
+              />grown-ups</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Hamburger icon Open Button -->
+      <a class="hamburger" href="#side-drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </header>
+    <!-- Side drawer for mobile navigation -->
+    <aside class="side-drawer" id="side-drawer">
+      <nav>
+        <header>
+          <a href="./home.html">
+            <img
+              class="logo"
+              src="../images/LOGO.png"
+              alt="The website logo, An outline silhouette of a cats face with the words 'Kitty Code Club' nested inside"
+            />
+          </a>
+          <!-- Hamburger icon Close Button -->
+          <a class="hamburger" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </header>
+        <!-- Navigation items for side drawer -->
+        <ul class="side-items">
+          <li class="split">
+            <a href="./home.html"
+              ><img class="side-img" src="../images/nav-images/home.png" />
+              home</a
+            >
+          </li>
+          <li class="split">
+            <a href="./make.html"
+              ><img
+                class="side-img"
+                src="../images/nav-images/make.png"
+              />make</a
+            >
+          </li>
+          <li class="split">
+            <a href="./play.html"
+              ><img
+                class="side-img"
+                src="../images/nav-images/play.png"
+              />play</a
+            >
+          </li>
+          <li class="split">
+            <a href="./watch.html"
+              ><img
+                class="side-img"
+                src="../images/nav-images/watch.png"
+              />watch</a
+            >
+          </li>
+          <li>
+            <a href="./grownups.html"
+              ><img
+                class="side-img"
+                src="../images/nav-images/grown-ups.png"
+              />grown-ups</a
+            >
+          </li>
+          <li class="close-btn"><a href="">close</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- Main section -->
+    <main>
+      <!-- Top section with the game -->
+      <section>
+        <!-- Main gaim container div -->
+        <div id="game-container">
+          <!-- game board where javascript creates the grid -->
+          <div id="game-board" class="game-board"></div>
+          <!-- Section containing game buttons and control display list -->
+          <div id="instruction-container">
+            <!-- Section with buttons for user to select directions -->
+            <div id="control-container">
+              <!-- Control Buttons -->
+              <ul>
+                <li class="btn controlBtn" id="upBtn" onclick="moveUp()">
+                  ↑ Up
+                </li>
+                <li class="btn controlBtn" id="downBtn" onclick="moveDown()">
+                  ↓ Down
+                </li>
+                <li class="btn controlBtn" id="leftBtn" onclick="moveLeft()">
+                  ← Left
+                </li>
+                <li class="btn controlBtn" id="rightBtn" onclick="moveRight()">
+                  → Right
+                </li>
+                <li class="btn goBtn" id="goBtn" onclick="moveCharacter()">
+                  GO
+                </li>
+                <li class="btn clearBtn" id="clearBtn" onclick="clearBtn()">
+                  Clear
+                </li>
+                <li class="btn newBtn" id="newBtn" onclick="startGame()">
+                  New Game
+                </li>
+              </ul>
+            </div>
+            <!-- Section where selected instruction will be displayed -->
+            <div id="control-display">
+              <!-- Empty control list populated by Javascript-->
+              <ul id="control-display-list"></ul>
+            </div>
+          </div>
+        </div>
+        <!-- Instructions on how to play the game -->
+        <h3 class="game-instructions">
+          Help Kitty follow the yellow path to find her mouse toy. <br />
+          Click the directions to create a list of instructions <br />
+          When you're ready click Go.
+        </h3>
+      </section>
+      <!-- Lower section with parent information -->
+      <section class="flex-container lower-section">
+        <!-- Cat Image -->
+        <img
+          class="parents-notes-companion-img"
+          onclick="audio.play();"
+          src="../images/Tablet-cat.png"
+          alt=""
+        />
+        <!-- parent information -->
+        <div class="parents-notes">
+          <h1>Notes for Parents</h1>
+          <p>
+            Click to drag and drop the instructions, putting them in the correct
+            order to guide Kitty safely through the maze.
+          </p>
+          <p>
+            This activity will show children a task, broken down into ordered
+            instructions and executed one by one. This is called sequencing and
+            this is exactly how computers execute code.
+          </p>
+          <p>
+            At Kitty Code Club, we believe in making learning fun through
+            engaging games and activities. We understand that children learn
+            best when they're excited and having a great time. Our approach
+            combines the magic of play with the fundamentals of computer
+            programming.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Footer section with copyright information -->
+    <footer>
+      <p>
+        © 2023 Kitty Code Club. <br />
+        All rights reserved. <br /><br />
+        Empowering young minds in the world of computer science.
+        <br /><br />
+        Join us in fostering creativity, problem-solving, and innovation in kids
+        through <br />fun coding adventures! 🐾✨
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Sequence Video Container
+   ========================================================================== */
+
+/* Centre the sequence video container and style its border and background */
+.sequence-video {
+  display: flex;
+  margin: 3rem auto;
+  width: 75%;
+  background-color: white;
+  border: 3pt solid #8b51f5;
+  border-radius: 25pt;
+}
+
+/* ==========================================================================
+   YouTube Video
+   ========================================================================== */
+
+/* Maintain aspect ratio and width for video */
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 92.5%;
+}
+
+/* Style the iframe within the sequence video container */
+.sequence-video iframe {
+  margin: 2.5%;
+  border: 3pt solid #8b51f5;
+}
+
+/* ==========================================================================
+   Video Description
+   ========================================================================== */
+
+/* Style the video description container */
+.video-description {
+  width: 35vh;
+  height: 300px;
+  border: 3pt solid #8b51f5;
+  margin: 2.5% 2.5% 2.5% 0;
+  overflow: auto;
+  padding: 0.5rem;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design
+   ========================================================================== */
+
+/* Styles for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .sequence-video {
+    width: fit-content;
+    margin: 0 0.5rem;
+    height: auto;
+    flex-direction: column;
+    border-radius: 10pt;
+  }
+
+  .video-description {
+    margin: 0.5rem auto;
+    width: 90%;
+    height: fit-content;
+  }
+
+  .youtube-video {
+    margin: auto;
+  }
+}

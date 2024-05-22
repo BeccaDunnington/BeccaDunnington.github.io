@@ -1,0 +1,154 @@
+/* ==========================================================================
+   Body Styles
+   ========================================================================== */
+
+/* Background gradient for the body */
+body {
+  background: linear-gradient(
+    rgba(139, 81, 245, 0.4),
+    rgba(201, 241, 253, 1) 40%
+  );
+}
+
+/* ==========================================================================
+   Flex Container
+   ========================================================================== */
+
+/* Flex container for centring content */
+.flex-container {
+  /* border: 2pt solid blue; */
+  display: flex;
+  margin: auto;
+}
+
+/* ==========================================================================
+   Parent Information Section
+   ========================================================================== */
+
+/* Container for parent information with styling */
+.parent-info {
+  flex-direction: column;
+  width: 80%;
+  border: #8b51f5 solid 3pt;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 12pt;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* ==========================================================================
+   Benefit List
+   ========================================================================== */
+
+/* Styling for the benefit list container */
+.benefit-list {
+  margin: 0rem auto;
+}
+
+/* List items within the benefit list */
+.benefit-list li {
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+/* Colour for span elements */
+span {
+  color: #8b51f5;
+}
+
+/* ==========================================================================
+   Links Section
+   ========================================================================== */
+
+/* Flex container for links with space between and centred */
+.links {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+/* Styles for anchor tags within the links section */
+.links a {
+  text-align: center;
+  margin: 0.25rem 0 4rem 0;
+  padding: 0;
+  width: 30%;
+  height: 13rem;
+  background-color: white;
+  border-radius: 12pt;
+  max-width: 250px;
+  border: 3pt solid #8b51f5;
+  box-shadow: 0 0.125rem 4pt #232323;
+}
+
+/* Hover effect for anchor tags within the links section */
+.links a:hover {
+  border: #ffa834 solid 3pt;
+  box-shadow: 0 0.25rem 4pt #232323;
+}
+
+/* Margin for the link labels */
+.link-label {
+  margin: 0.25rem;
+}
+
+/* Images in the links section */
+.links img {
+  width: 85%;
+  height: 8rem;
+  border: 3pt solid #ffa834;
+  max-width: 200px;
+  border-radius: 8pt;
+  margin: 0.75rem 0 0;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design
+   ========================================================================== */
+
+/* Styles for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  /* Change background colour for smaller screens */
+  body {
+    background: #c9f1fd;
+  }
+
+  .flex-container {
+    width: 80%;
+  }
+
+  .parent-info {
+    margin: 0 auto;
+    width: 75%;
+    padding: 1rem;
+  }
+
+  /* Hide bottom navigation for mobile */
+  .bottom-nav {
+    display: none;
+  }
+
+  footer {
+    display: block;
+    width: auto;
+    margin: 1rem 0 0 0;
+  }
+
+  /* Smaller font size and centred text for footer paragraphs */
+  footer p {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .benefit-list {
+    margin: 0rem;
+    padding: 0 1rem;
+  }
+
+  .benefit-list li {
+    margin: 0.5rem 0;
+  }
+}
