@@ -22,6 +22,7 @@ ul {
   width: 70%;
   height: 60vh;
   min-height: 300px;
+  max-height: 500px
   position: relative;
 }
 
